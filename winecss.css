@@ -1,0 +1,131 @@
+body{
+    background-color: #ffbac1;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.topnav {
+    overflow: hidden;
+    background-color: #800410;
+    position: fixed;
+    width:59.2%;
+    
+    
+  }
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #63000a;
+    color: white;
+  }
+#container{
+    background-color: #9e579d;
+    width: 60%;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    
+}
+#header{
+    background-color: #ff364a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+#about{
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+#types{
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+#process{
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+p{
+    padding:0px 10px 0px 10px
+}
+#container{
+    
+}
+
+#footer{
+    text-align: right;
+    padding: 10px;
+    bottom: 0;
+    
+
+}
+
+.menu-button{
+    float:right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    padding: 6px 10px 0px 0px;
+    
+    
+    /*border: 3px solid #fff;*/
+    
+}
+.menu-button-burger{
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.menu-button-burger::before,
+.menu-button-burger::after{
+    content:'';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+}
+.menu-button-burger::before{
+    transform: translateY(-16px);
+}
+.menu-button-burger::after{
+    transform: translateY(16px);
+}
+
+.menu-button.open .menu-button-burger{
+    transform: translate(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-button.open .menu-button-burger::before{
+    transform: rotate(45deg) translate(35px, -35px)
+}
+.menu-button.open .menu-button-burger::after{
+    transform: rotate(-45deg) translate(35px, 35px)
+}
